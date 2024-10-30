@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <title>Document</title>
+    <style>
+        header h2 {
+            display: block;
+            border-bottom: 2px solid lightgrey;
+        }
+
+        nav {
+            display: none;
+        }
+
+        button {
+            display: none;
+        }
+
+        aside {
+            display: none;
+        }
+
+        .wrapper {
+            padding: 1rem;
+            display: flex;
+            flex-flow: column nowrap;
+            flex: 1;
+            justify-content: space-between;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(61, 60, 60);
+            color: white;
+            margin-top: auto;
+            padding: 1rem;
+        }
+
+
+        footer ul {
+            display: none;
+        }
+
+        .second {
+            border-top: 1px solid lightgrey;
+            margin-top: 1rem;
+        }
+
+        .first,
+        .second {
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .first img,
+        .second img {
+            width: 100%;
+            margin-right: 0;
+            flex: 1;
+            border-radius: 5%;
+        }
+
+        .author {
+            color: grey;
+        }
+
+        image {
+            border-radius: 50%;
+        }
+
+        @media (min-width: 500px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+
+            main {
+                display: flex;
+                flex-grow: 1;
+                padding: 1rem;
+            }
+
+            .content {
+                display: flex;
+                flex: 1;
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+
+            .top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            header h2 {
+                border: none;
+            }
+
+            nav {
+                background-color: lightgray;
+                padding: .5rem;
+                display: block;
+            }
+
+            nav ul {
+                list-style: none;
+                padding-left: 0;
+                display: flex;
+                justify-content: center;
+                color: orangered;
+            }
+
+            nav ul li {
+                margin-right: 1.5rem;
+            }
+
+            footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(61, 60, 60);
+                color: white;
+                margin-top: auto;
+                padding: 1rem;
+            }
+
+            footer ul {
+                display: inline;
+                list-style: none;
+                padding-left: 0;
+                display: flex;
+            }
+
+            footer ul li {
+                margin-right: 1.5rem;
+            }
+            .wrapper {
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin-bottom: 25%;
+            }
+
+            .first,
+            .second {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: row;
+            }
+
+            .first img,
+            .second img {
+                margin-right: 1rem;
+                width: 30%;
+                height: auto;
+            }
+
+            .text {
+                flex: 1;
+            }
+
+            aside {
+                width: 30%;
+                display: block;
+                background-color: lightgrey;
+                border-radius: 2%;
+                padding: 1rem;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: .5rem;
+            }
+            button {
+                display: inline;
+                padding: 1rem;
+                background-color: orangered;
+                color: white;
+                border-radius: .5rem;
+            }
+            header button {
+                background-color: lightgrey;
+                padding-left: 6rem;
+                padding-right: 6rem;
+                border: none;
+                color: grey;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <h2>Luke Merrill</h2>
+            <button type="submit">Type to Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Recent posts</li>
+                <li>Old posts</li>
+                <li>Contact us</li>
+                <li>About us</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <div class="wrapper">
+                <div class="first">
+                    <img src="images/river.jpg" alt="Description of image" class="left-image">
+                    <div class="text">
+                        <h3>First post with image</h3>
+                        <div class="author">By Adam Smith, Jan 1 2021</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maiores nulla fuga quam,
+                            molestias minus id debitis expedita cumque sequi, sapiente placeat earum dolore quo deleniti
+                            illum laudantium reprehenderit dolorum.</p>
+                            <button>read more</button>
+                    </div>
+                </div>
+                <div class="second">
+                    <img src="images/forest.jpg" alt="Description of image" class="left-image">
+                    <div class="text">
+                        <h3>Second post with image</h3>
+                        <div class="author">By Adam Smith, Jan 1 2021</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam nam officia hic error laborum
+                            libero fugiat dicta totam ipsum earum dolores nobis maiores magni aliquam veniam debitis, in
+                            nesciunt! Fuga.</p>
+                            <button>read more</button>
+                    </div>
+                </div>
+            </div>
+            <aside>
+                <div class="text">
+                    <h3>Secondary content here</h3>
+                    <img src="images/green_hills.jpg" alt="Description of image" class="left-image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque earum aliquam eveniet accusamus!
+                        Numquam, beatae inventore veniam pariatur culpa accusantium cum, repellat a eveniet nemo
+                        dignissimos fugiat magni ducimus. Necessitatibus.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>YouTube</li>
+        </ul>
+        <p>&copy; All rights reserved</p>
+    </footer>
+</body>
+
+</html>

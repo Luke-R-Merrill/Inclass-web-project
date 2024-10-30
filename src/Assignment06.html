@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: inherit;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: lightgray;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            width: 100%;
+            padding: 10px 20px;
+        }
+
+        .left,
+        .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .left h4 {
+            margin-right: 20px;
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        header ul li {
+            padding-left: 1rem;
+            color: blue;
+        }
+
+        header ul li:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+
+        aside {
+            padding: 1rem;
+            margin: 1rem;
+            border: 1px solid white;
+            border-radius: 12px;
+            background-color: white;
+        }
+
+        aside ul {
+            list-style: none;
+            color: blue;
+            text-align: left;
+            margin-left: 2rem;
+            margin-top: 1.2rem;
+            margin-bottom: 1.2rem;
+        }
+
+        aside ul li {
+            margin-top: .2rem;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            margin: 1rem;
+            background-color: white;
+            border-radius: 12px;
+        }
+
+        button {
+            width: 100%;
+            background-color: white;
+            border-radius: 4px;
+            color: rgb(150, 148, 148);
+            text-align: left;
+            padding: .5rem;
+            border: 2px solid rgb(150, 148, 148);
+        }
+
+        .name h1 {
+            border-bottom: 2px solid blue;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .name {
+            margin-bottom: 1rem;
+        }
+
+        .username {
+            margin-bottom: 1rem
+        }
+        .username button {
+            border: 2px solid limegreen;
+        }
+
+        .username small {
+            color: limegreen;
+        }
+
+        .member {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .member-buttons {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            padding-right: .5rem;
+        }
+
+        .wrap {
+            display: flex;
+        }
+
+        .terms button {
+            width: auto;
+            border-radius: 32px;
+        }
+
+        .terms b {
+            color: blue;
+        }
+
+        .submit {
+            display: flex;
+            margin: 1rem;
+            margin-left: 0;
+        }
+
+        .submit button {
+            width: auto;
+            margin-right: .5rem;
+            padding: .5rem 1rem;
+        }
+        .blue-bg button{
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+        .blue-text button {
+            color: blue;
+            background-color: lightgray;
+            border: none;
+        }
+
+        .email {
+            margin-bottom: 1rem;
+        }
+        .member button {
+            border-radius: 32px;
+        }
+
+        .email button {
+            border: 2px solid red;
+        }
+
+        .email small {
+            color: red;
+        }
+
+        .message {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin-bottom: 1rem;
+        }
+
+        .message button {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        footer {
+            font-size: .75rem;
+            text-align: center;
+            color: white;
+            background-color: black;
+            height: 50px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <h4>Luke Merrill</h4>
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li>Sign in</li>
+                <li>Sign up</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <h3>Main menu</h3>
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Services</li>
+                <li>About us</li>
+            </ul>
+            <h3>Featured projects</h3>
+            <ul>
+                <li>Project A</li>
+                <li>Project B</li>
+                <li>Project C</li>
+                <li>Project D</li>
+                <li>Project F</li>
+                <li>Project G</li>
+            </ul>
+        </aside>
+        <div class="content">
+            <div class="name">
+                <h1>Contact Us Form</h1>
+                <h4>Name</h4>
+                <button>Type name here</button>
+            </div>
+            <div class="username">
+                <h4>Username</h4>
+                <button>Text input</button>
+                <small>This Username is available</small>
+            </div>
+            <div class="member">
+                <h4>Are you a member?</h4>
+                <div class="wrap">
+                    <div class="member-buttons">
+                        <button></button> <small>yes</small>
+                    </div>
+                    <div class="member-buttons">
+                        <button></button> <small>no</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="email">
+                <h4>Email</h4>
+                <button>Email input</button>
+                <small>This email is invalid</small>
+            </div>
+            <div class="message">
+                <h4>Message</h4>
+                <button>textarea</button>
+            </div>
+            <div class="terms">
+
+                <div class="member-buttons">
+                    <button></button> <small>I agree to the <b>terms and conditions</b></small>
+                </div>
+            </div>
+
+            <div class="submit">
+                <div class="blue-bg">
+                    <button>Submit</button>
+                </div>
+                <div class="blue-text">
+                    <button>Cancel</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy;2021 - CS 2350 - All rights reserved
+    </footer>
+</body>
+
+</html>

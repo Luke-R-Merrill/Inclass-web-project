@@ -1,2 +1,5 @@
-//TODO - Your ES6 JavaScript code (if any) goes here
 import "bootstrap"
+
+let x = 1
+let y = 2
+let z = 3
